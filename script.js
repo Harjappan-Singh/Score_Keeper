@@ -25,6 +25,14 @@ function updateScores(player, opponent) {
             player.button.disabled = true
             opponent.button.disabled = true
         }
+
+
+        else if (player.score === 10 && opponent.score === 10) {
+            winningScore = 12;
+        }
+        else if (player.score === 20 && opponent.score === 20) {
+            winningScore = 22;
+        }
         player.display.textContent = player.score;
     }
 }
@@ -52,12 +60,4 @@ function reset() {
         player.display.classList.remove("has-text-success", "has-text-danger")
         player.button.disabled = false
     }
-    player1.score = 0;
-    player2.score = 0;
-    player1.di
-    player2.display.textContent = player2.score;
-
-    player2.display.classList.remove("has-text-success", "has-text-danger")
-
-    player2.button.disabled = false
 }
