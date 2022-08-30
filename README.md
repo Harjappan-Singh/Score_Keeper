@@ -1,2 +1,2 @@
 # Score_Keeper
- A sime score keeper for badminton
+ A simple score keeper for badminton
